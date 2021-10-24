@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.AppDarkMode {
+    height: 100vh;
+    background: #282C34;
+    color: white;
+    transition: all 0.3s linear;
+}
+.AppLightMode {
+    height: 100vh;
+    background: white;
+    color: #282C34;
+    transition: all 0.3s linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.themeSwitch {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    padding-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.visit-me-link {
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Spartan', sans-serif !important;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
+.visit-me-link:hover {
+    padding-left: 30px;
 }

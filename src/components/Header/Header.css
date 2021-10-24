@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 35vh;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.title {
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search {
+    width: 35%;
+}
+
+.select {
+    width: 35%;
+}
+
+@media (max-width: 900px) {
+    .header {
+        justify-content: space-evenly;
+        height: 35vh;
+    }
+    .title {
+        font-size: 10vw;
+    }
+}
+
+.css-vydhe7-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: black !important;
+}
